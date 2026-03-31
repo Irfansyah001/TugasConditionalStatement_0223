@@ -10,3 +10,5 @@ string classifyBMI(float bmi) { // Fungsi untuk mengklasifikasikan BMI berdasark
         return "Kurang";
     } else if (bmi >= 18.5 && bmi <= 24.9) { // Jika BMI antara 18.5 dan 24.9, maka status berat badan adalah "Normal"
         return "Normal";
+    } else if (bmi >= 25 && bmi <= 29.9) { // Jika BMI antara 25 dan 29.9, maka status berat badan adalah "Kelebihan"
+        return "Kelebihan";
