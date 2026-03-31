@@ -17,3 +17,24 @@ string classifyBMI(float bmi) { // Fungsi untuk mengklasifikasikan BMI berdasark
     }
 }
 
+int main() {
+    float weight, height; // Variabel untuk menyimpan berat badan dan tinggi badan
+
+    cout << "--- Program Penghitung BMI ---" << endl;
+
+    cout << "Masukkan berat badan (kg): ";
+    cin >> weight;
+
+    cout << "Masukkan tinggi badan (m): ";
+    cin >> height;
+
+    float bmi = calculateBMI(weight, height); // Menghitung BMI menggunakan fungsi calculateBMI
+    string classification = classifyBMI(bmi); // Mengklasifikasikan BMI menggunakan fungsi classifyBMI
+
+    cout << "Hasil Perhitungan BMI:" << endl;
+
+    cout << "BMI Anda: " << bmi << endl;
+    cout << "Status Berat Badan: " << classification << endl;
+
+    return 0; // Mengembalikan nilai 0 untuk menandakan bahwa program telah selesai dengan sukses
+}
